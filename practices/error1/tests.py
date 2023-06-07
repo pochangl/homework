@@ -8,5 +8,7 @@ class Test(TestCase):
             from . import main
         except TypeError:
             pass
+        except Exception as error:
+            self.fail(f'{type(error)} 不是 TypeError')
         else:
             self.fail('沒有出現 TypeError')
