@@ -1,3 +1,4 @@
 main.py
 *.pyc
-settings.json
+*.code-workspace
+.vscode
