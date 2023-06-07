@@ -1,4 +1,5 @@
 import contextlib
+import importlib
 import io
 import sys
 from unittest import TestCase
@@ -23,3 +24,11 @@ def mock_stdout():
         raise e
     finally:
         stream.seek(0)
+
+modules = {}
+
+def rerun_module(name):
+    if name in modules:
+        importlib.reload(modules[name])
+    else:
+        modules[name] = importlib.import_module(name)
