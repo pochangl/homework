@@ -19,8 +19,7 @@ def mock_stdout():
     try:
         with contextlib.redirect_stdout(stream):
             yield stream
-    except:
-        stream.seek(0)
-        print(stream.read())
+    except Exception as e:
+        raise e
     finally:
         stream.seek(0)
