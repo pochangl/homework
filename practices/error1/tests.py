@@ -1,5 +1,5 @@
 '''
-練習寫個會產生 IndentError 的程式碼
+練習寫個會產生 TypeError 的程式碼
 '''
 from unittest import TestCase
 class Test(TestCase):
