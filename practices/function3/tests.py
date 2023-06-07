@@ -18,3 +18,7 @@ class Test(TestCase):
     def test_case_3(self):
         result = minus(b=2, a=1)
         self.assertEqual(result, -1)
+
+    def test_case_4(self):
+        result = minus(2, a=1)
+        self.assertEqual(result, -1)
