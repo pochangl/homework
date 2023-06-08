@@ -54,8 +54,36 @@ class Test(TestCase):
             a = 2
         self.assertEqual(a, )
 
-    def test_case_dict_2(self):
+    def test_case_bool_2(self):
         if True:
+            a = 1
+        else:
+            a = 2
+        self.assertEqual(a, )
+
+    def test_case_int_1(self):
+        if 0:
+            a = 1
+        else:
+            a = 2
+        self.assertEqual(a, )
+
+    def test_case_int_2(self):
+        if 1:
+            a = 1
+        else:
+            a = 2
+        self.assertEqual(a, )
+
+    def test_case_int_3(self):
+        if -1:
+            a = 1
+        else:
+            a = 2
+        self.assertEqual(a, )
+
+    def test_case_int_4(self):
+        if 9:
             a = 1
         else:
             a = 2
